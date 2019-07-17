@@ -37,16 +37,16 @@
     background-size: cover;
     flex: 1 0 100%; }
     .demo-01 .slide:nth-child(1) {
-      background-image: url("/assets/07/16/1.jpg");
+      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/1.jpg");
       margin-left: 0; }
     .demo-01 .slide:nth-child(2) {
-      background-image: url("/assets/07/16/2.jpg"); }
+      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/2.jpg"); }
     .demo-01 .slide:nth-child(3) {
-      background-image: url("/assets/07/16/3.jpg"); }
+      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/3.jpg"); }
     .demo-01 .slide:nth-child(4) {
-      background-image: url("/assets/07/16/4.jpg"); }
+      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/4.jpg"); }
     .demo-01 .slide:nth-child(5) {
-      background-image: url("/assets/07/16/5.jpg");
+      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/5.jpg");
       margin-right: 0; }
   .demo-01 .slide-info {
     position: absolute;
@@ -98,16 +98,16 @@
       .demo-01 .slider-controls-thumb-list li:hover {
         background-origin: border-box; }
       .demo-01 .slider-controls-thumb-list li:nth-child(1) {
-        background-image: url("/assets/07/16/1.jpg");
+        background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/1.jpg");
         margin-left: 0; }
       .demo-01 .slider-controls-thumb-list li:nth-child(2) {
-        background-image: url("/assets/07/16/2.jpg"); }
+        background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/2.jpg"); }
       .demo-01 .slider-controls-thumb-list li:nth-child(3) {
-        background-image: url("/assets/07/16/3.jpg"); }
+        background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/3.jpg"); }
       .demo-01 .slider-controls-thumb-list li:nth-child(4) {
-        background-image: url("/assets/07/16/4.jpg"); }
+        background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/4.jpg"); }
       .demo-01 .slider-controls-thumb-list li:nth-child(5) {
-        background-image: url("/assets/07/16/5.jpg");
+        background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/5.jpg");
         margin-right: 0; }
 
 .demo-02 .d-1 {
