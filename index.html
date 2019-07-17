@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pwe | sliders</title>
+	<link rel="stylesheet" type="text/css" href="/styles/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/styles/css/t/07/17/01.css">
+</head>
+<body class="test">
+	<header class="main-header">
+		<h1>Sliders</h1>
+	</header>
+	<article>
+		<h2>Moving Boxes</h2>
+		<div class="demo demo-01">
+			<div class="slider">
+				<div class="slider-window">
+					<div class="slider-viewport">
+						<div class="slide" data-slide="1">
+						<div class="slide-info">
+							<h2>Slide #1</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequatur laudantium hic</p>
+						</div>
+					</div>
+					<div class="slide" data-slide="2">
+						<div class="slide-info">
+							<h2>Slide #2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequatur laudantium hic</p>
+						</div>
+					</div>
+					<div class="slide" data-slide="3">
+						<div class="slide-info">
+							<h2>Slide #3</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequatur laudantium hic</p>
+						</div>
+					</div>
+					<div class="slide" data-slide="4">
+						<div class="slide-info">
+							<h2>Slide #4</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequatur laudantium hic</p>
+						</div>
+					</div>
+					<div class="slide" data-slide="5">
+						<div class="slide-info">
+							<h2>Slide #5</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequatur laudantium hic</p>
+						</div>
+					</div>
+					</div>
+				</div> <!-- slider-window -->
+				<div class="slider-controls">
+					<ul class="slider-controls-thumb-list">
+						<li data-slide="1" class="active"></li>
+						<li data-slide="2"></li>
+						<li data-slide="3"></li>
+						<li data-slide="4"></li>
+						<li data-slide="5"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<script type="text/javascript">
+		var currentSlide = 0;
+		var slidesThmb = Array.prototype.slice.call(document.querySelectorAll('.demo-01 .slider-controls-thumb-list li'));
+		var sliderVprt = document.querySelector('.demo-01 .slider-viewport');
+
+		slidesThmb.forEach(function(item, i, arr){
+				item.addEventListener("click", function(ev){
+					offset = arr.indexOf(item);
+					sliderVprt.style.transform = "translateX(-" + offset*500 + "px)";
+					setCurrentSlide(arr, offset);
+					currentSlide = offset;
+				}, false);
+		});
+
+		function setCurrentSlide(arr, num){
+			arr.forEach(function(item, i, array){
+				if(item.classList.contains('active')){
+					item.classList.remove('active');
+				};
+
+			});
+			arr[num].classList.add('active');
+		}
+
+	</script>
+</body>
+</html>
