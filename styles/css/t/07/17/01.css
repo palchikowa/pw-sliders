@@ -37,7 +37,7 @@
     background-size: cover;
     flex: 1 0 100%; }
     .demo-01 .slide:nth-child(1) {
-      background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/1.jpg");
+      background-image: url("https://github.com/palchikowa/pw-sliders/blob/master/assets/07/16/1.jpg?raw=true");
       margin-left: 0; }
     .demo-01 .slide:nth-child(2) {
       background-image: url("https://github.com/palchikowa/pw-sliders/assets/07/16/2.jpg"); }
